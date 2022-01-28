@@ -1,0 +1,34 @@
+body { background: var(--bs-secondary) }
+
+.container.container-small { max-width: 700px }
+
+.initials-circle {
+  --size: 2em;
+  width: var(--size);
+  height: var(--size);
+}
+
+.nav-margin {
+  margin-top: 4rem;
+}
+
+@keyframes fadeLoading {
+  0%{
+    background-color: var(--bs-dark);
+  }
+  50%{
+    background-color: var(--bs-secondary);
+  }
+  100%{
+    background-color: var(--bs-dark);
+  }
+}
+
+.loading-page {
+  height: 100vh;
+  background-image: url("../public/comments.svg");
+  background-position: center;
+  background-size: 25%;
+  background-repeat: no-repeat;
+  animation: fadeLoading 5s ease-in-out infinite;
+}
